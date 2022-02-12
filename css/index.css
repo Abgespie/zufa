@@ -87,12 +87,14 @@ img {
     margin-top: 8px;
     margin-right: 81px;
     transition: 0.6s all ease;
-    font-size: 18px
+    font-size: 18px;
+    color: #333333;
 }
 .header-top-connect-number__desc {
     margin-top: 8px;
     transition: 0.6s all ease;
     font-size: 18px;
+    color: #333333;
 }
 .header-top-connect-email__desc:hover, .header-top-connect-number__desc:hover {
     color: #2BB063;
@@ -281,3 +283,84 @@ img {
     max-width: 175px;
     margin-left: 50px;
 }
+
+/* seldin */
+
+.seldin {
+    background-image: url(../img/seldin/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 250px;
+    padding-bottom: 300px;
+}
+.seldin-losings-box {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(206, 206, 206, 0.25);
+    border-radius: 15px;
+    max-width: 775px;
+    padding: 8px;
+    margin-bottom: 50px;
+}
+.seldin-losungs-box-statement {
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 18px;
+}
+.seldin-losungs-box-statement__quote--bot {
+    margin-left: 70%;
+}
+.seldin-losungs-box-statement__desc {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 150%;
+    text-transform: uppercase;
+    margin-left: 55px;
+    margin-top: 0px;
+}
+.seldin-losungs-card {
+    position: relative;
+    background: linear-gradient(130.21deg, rgba(255, 255, 255, 0.8) -1.26%, rgba(255, 255, 255, 0) 142.69%);
+    border-radius: 10px;
+    max-width: 434px;
+    padding: 25px;
+}
+.seldin-losungs-card__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+}
+.seldin-losungs-card__desc {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 130%;
+}
+.seldin-losungs-card-cap__img {
+    position: absolute;
+    max-width: 271px;
+    right: -100px;
+    top: 70px;
+    z-index: 5;
+}
+.seldin-photo {
+    position: relative;
+}
+.seldin-photo__img {
+    position: absolute;
+    max-width: 1015px;
+    bottom: -200px;
+    right: -200px;
+}
+.seldin-air {
+    position: relative;
+    max-width: 1920px;
+}
+.seldin-air__img {
+    position: absolute;
+    top: -50px;
+}
+
+/* perfect */
+
