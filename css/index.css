@@ -372,6 +372,7 @@ img {
     background-size: cover;
     background-position: center;
     padding-top: 0px;
+    /* padding-bottom: 150px; */
     z-index: 5;
 }
 .pecfect-flex {
@@ -466,6 +467,7 @@ img {
     border-radius: 15px;
     padding: 8px;
     margin-left: 100px;
+    margin-top: 250px;
     z-index: 2;
 }
 .perfect-box::after {
@@ -523,4 +525,109 @@ img {
     max-width: 174px;
     bottom: 30px;
     right: 10px;
+}
+
+/* helper */
+
+.helper {
+    background-image: url(../img/helper/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 180px;
+    padding-bottom: 140px;
+}
+.helper__title {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 760px;
+    margin-left: 300px;
+}
+.helper-card {
+    background-image: url(../img/helper/card-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 112px 75px;
+    max-width: 1170px;
+}
+.helper-card-top {
+    margin-bottom: 180px;
+    margin-top: 20px;
+}
+.helper-card-top, .helper-card-bot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.helper-card-bot {
+    margin-bottom: 10px;
+}
+.helper-card-top-el {
+    position: relative;
+    max-width: 278px;
+    text-align: center;
+    padding: 60px 35px 5px 35px;
+    border: 1px solid #E8E8E8;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.helper-card-top-el--2 {
+    padding: 60px 5px 5px 5px;
+}
+.helper-card-top-el__img {
+    position: absolute;
+    max-width: 230px;
+    top: -100px;
+    right: 30px;
+}
+.helper-card-top-el__img--2 {
+    max-width: 258px;
+    right: 10px;
+}
+.helper-card-top-el__title, .helper-card-bot-el-texts__title {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    color: #000000;
+}
+.helper-card-top-el__desc, .helper-card-bot-el-texts__desc {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+.helper-card-bot-el {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.helper-card-bot-el-texts__desc {
+    text-align: left;
+}
+.helper-card-bot-el-texts__title {
+    margin-bottom: 0;
+}
+.helper-card-bot-el-texts {
+    max-width: 253px;
+    margin-left: 30px;
+}
+.helper-card-bot-el__img--1 {
+    max-height: 90px;
+    margin-top: 35px;
+}
+.helper-card-bot-el__img--2 {
+    max-height: 160px;
+    margin-right: -30px;
+}
+.helper-card-bot-el__img--3 {
+    max-height: 150px;
+    margin-right: -10px;
 }
