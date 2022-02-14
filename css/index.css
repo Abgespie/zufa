@@ -631,3 +631,196 @@ img {
     max-height: 150px;
     margin-right: -10px;
 }
+
+/* choose */
+
+.choose {
+    padding-top: 100px;
+}
+.choose__title {
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+.choose-puzzle {
+    background: #FFFFFF;
+    box-shadow: 0px 6px 25px rgba(216, 216, 216, 0.3);
+    border-radius: 20px;
+    max-width: 377px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.choose-puzzle-content {
+    border: 1px solid #F3F3F3;
+    box-sizing: border-box;
+    /* filter: drop-shadow(0px 6px 25px rgba(216, 216, 216, 0.3)); */
+    border-radius: 20px;
+    max-width: 357px;
+    padding-top: 10px;
+}
+.choose-puzzle-content__img {
+    max-height: 245px;
+}
+.choose-puzzle-content__desc {
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 100%;
+    text-align: center;
+    color: #000000;
+}
+.choose-puzzle-content__price {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 100%;
+    color: #000000;
+}
+.choose-puzzle-content__price--higher {
+    text-decoration-line: line-through;
+    color: #D1D1D1;
+    margin-left: 5px;
+}
+.choose-puzzle-content-button {
+    position: relative;
+    background: linear-gradient(181.45deg, #18D262 9.41%, #109A47 99.02%);
+    box-shadow: inset 0px 2px 0px #0BC154, inset 0px -3px 0px #058F3D;
+    border-radius: 10px;
+    max-width: 248px;
+    padding: 19px 37px 25px 37px;
+    z-index: 2;
+}
+.choose-puzzle-content-button::after {
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 60%;
+    display: flex;
+    margin-left: -5px;
+    top: 20px;
+    background: linear-gradient(181.45deg, rgba(24, 210, 98, 0.5) 9.41%, rgba(16, 154, 71, 0.5) 99.02%);
+    filter: blur(30px);
+    border-radius: 10px;
+    transition: 0.6s all ease;
+}
+.choose-puzzle-content-button:hover:after {
+    content: "";
+    transition: 0.6s all ease;
+    opacity: 0;
+}
+.choose-puzzle-content-button__content {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 2;
+}
+.choose-puzzle-content__more {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #BCBCBC;
+    cursor: pointer;
+}
+.choose-puzzle-content__more::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    background-color: #C4C4C4;
+    height: 1px;
+    left: 128px;
+    bottom: 0;
+}
+.choose-delivery {
+    background-image: url(../img/choose/deliver.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 82px 85px 108px 85px;
+    margin-bottom: 90px;
+}
+.choose-delivery__title {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 120%;
+    text-transform: uppercase;
+    max-width: 461px;
+}
+.choose-delivery__desc {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 130%;
+    text-transform: uppercase;
+}
+.choose-share {
+    background-image: url(../img/choose/share.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: center;
+    padding: 350px 0px 30px 0px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+}
+.choose-share__desc {
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #666666;
+    max-width: 299px;
+}
+.choose-statesments {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+}
+.choose-statesments-happy {
+    background-image: url(../img/choose/happy-man.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 35px 77px 250px 79px;
+}
+.choose-statesments-production {
+    background-image: url(../img/choose/jupiter.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 37px 140px 231px 24px;
+}
+.choose-statesments-smiles {
+    background-image: url(../img/choose/happy-women.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    padding: 35px 48px 233px 50px;
+}
+.choose-statesments__title {
+    font-weight: 800;
+    font-size: 46px;
+    line-height: 100%;
+    text-align: center;
+}
+.choose-statesments__desc {
+    font-weight: normal;
+    font-size: 23px;
+    line-height: 100%;
+    text-align: center;
+}
+.choose-statesments-production__desc {
+    max-width: 213px;
+}
+.choose-statesments-smiles__desc {
+    max-width: 279px;
+}
