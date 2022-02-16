@@ -1100,3 +1100,269 @@ img {
     color: #FFFFFF;
     z-index: 2;
 }
+
+/* owner */
+
+.owner {
+    position: relative;
+    background-image: url(../img/owner/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 350px;
+    padding-bottom: 250px;
+}
+.owner__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 120%;
+    text-transform: uppercase;
+    max-width: 420px;
+}
+.owner__desc {
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 130%;
+    max-width: 370px;
+    margin-bottom: 245px;
+}
+.owner-air {
+    position: absolute;
+    background-image: url(../img/owner/air.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* max-width: 425px; */
+    padding: 82px 40px 65px 78px;
+    right: 400px;
+    top: 350px;
+}
+.owner-air__desc {
+    font-weight: 800;
+    font-size: 21px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 305px;
+}
+.owner-box {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 100px;
+}
+.owner-box-card {
+    position: relative;
+}
+.owner-box-card--1, .owner-box-card--3 {
+    background: linear-gradient(190.46deg, #A8D0DD 5.64%, #BDEAED 95.18%);
+    border-radius: 15px;
+    max-width: 377px;
+    max-height: 259px;
+    margin-bottom: 25px;
+}
+.owner-box-card--1 {
+    padding: 35px 32px 82px 30px;
+    margin-right: 20px;
+}
+.owner-box-card--1::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 25px;
+    background-image: url(../img/owner/01.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: right;
+    color: #FFFFFF;
+    bottom: 0;
+    right: 20px;
+}
+.owner-box-card--2 {
+    max-width: 377px;
+    background: linear-gradient(144.29deg, #FFCA64 8.5%, #FEE088 79.09%);
+    border-radius: 15px;
+    margin-right: 20px;
+    max-height: 259px;
+    padding: 35px 4px 40px 30px;
+}
+.owner-box-card--2::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 25px;
+    background-image: url(../img/owner/02.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: right;
+    color: #FFFFFF;
+    bottom: 0;
+    right: 20px;
+}
+.owner-box-card--3 {
+    padding: 35px 32px 82px 30px;
+}
+.owner-box-card--3::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 25px;
+    background-image: url(../img/owner/03.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: right;
+    color: #FFFFFF;
+    bottom: 0;
+    right: 20px;
+}
+.owner-box-card--4 {
+    max-width: 576px;
+    background: linear-gradient(144.29deg, #FFCA64 8.5%, #FEE088 79.09%);
+    border-radius: 15px;
+    margin-right: 20px;
+    max-height: 260px;
+    padding: 35px 32px 82px 30px;
+}
+.owner-box-card--4::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 25px;
+    background-image: url(../img/owner/04.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: right;
+    color: #FFFFFF;
+    bottom: 0;
+    right: 20px;
+}
+.owner-box-card--5 {
+    max-width: 575px;
+    background: linear-gradient(190.46deg, #A8D0DD 5.64%, #BDEAED 95.18%);
+    border-radius: 15px;
+    max-height: 260px;
+    padding: 35px 32px 82px 30px;
+}
+.owner-box-card--5::after {
+    content: "";
+    position: absolute;
+    width: 54px;
+    height: 25px;
+    background-image: url(../img/owner/05.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    text-align: right;
+    color: #FFFFFF;
+    bottom: 0;
+    right: 20px;
+}
+.owner-box-card__title {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 120%;
+    text-transform: uppercase;
+    margin-top: 0;
+}
+.owner-box-card__desc  {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 130%;
+}
+.owner-cover {
+    display: flex;
+    justify-content: center;
+}
+.owner-button {
+    position: relative;
+    background: linear-gradient(181.45deg, #18D262 9.41%, #109A47 99.02%);
+    box-shadow: inset 0px 2px 0px #0BC154, inset 0px -3px 0px #058F3D;
+    border-radius: 10px;
+    max-width: 377px;
+    padding: 26px 74px 32px 75px;
+    z-index: 2;
+    margin-left: -100px;
+}
+.owner-button::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    margin-left: -55px;
+    top: 20px;
+    background: linear-gradient(181.45deg, rgba(24, 210, 98, 0.5) 9.41%, rgba(16, 154, 71, 0.5) 99.02%);
+    filter: blur(30px);
+    border-radius: 10px;
+    transition: 0.6s all ease;
+}
+.owner-button:hover:after {
+    content: "";
+    transition: 0.6s all ease;
+    opacity: 0;
+}
+.owner-button__content {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 2;
+}
+
+/* assistants */
+
+.assistants {
+    background-image: url(../img/assistants/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 67px;
+    padding-bottom: 208px;
+}
+.assistants__title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 540px;
+    margin-top: 0;
+}
+.assistants-cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+.assistants-cards-card {
+    background: linear-gradient(114.28deg, #FFFFFF 4.24%, rgba(255, 255, 255, 0.634) 278.91%, rgba(255, 255, 255, 0) 364.83%);
+    border-radius: 10px;
+    padding: 25px;
+    max-width: 428px;
+    max-height: 192px;
+}
+.assistants-cards-card--1 {
+    max-height: 140px;
+}
+.assistants-cards-card__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 150%;
+    margin-top: 0;
+}
+
+/* reviews */
+
+
+
+/* age */
+
+/* questions */
+
+/* footer */
+
