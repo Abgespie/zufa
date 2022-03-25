@@ -1323,7 +1323,7 @@ img {
     background-size: cover;
     background-position: center;
     padding-top: 67px;
-    padding-bottom: 208px;
+    padding-bottom: 308px;
 }
 .assistants__title {
     font-weight: 800;
@@ -1358,11 +1358,285 @@ img {
 
 /* reviews */
 
+.reviews {
+    position: relative;
+    background-image: url(../img/reviews/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 354px;
+    padding-bottom: 305px;
+}
+.reviews__title {
+    margin-top: 0;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 108px;
+}
+.reviews-slider {
+    position: relative;
+}
+.reviews-slider-arrowPrev {
+    position: absolute;
+    left: -80px;
+    top: 45%;
+}
+.reviews-slider-arrowNext {
+    position: absolute;
+    right: -80px;
+    top: 45%;
+}
+.slick-list {
+    height: 550px;
+    /* max-width: 1060px; */
+}
+.reviews-slider-slide:not(.slick-active) {
+    opacity: 0;
+}
+.reviews-slider-slide {
+    transition: all ease 0.6s;
+    transform: translateY(50px);
+}
+.reviews-slider-slide-box {
+    position: relative;
+    max-width: 310px;
+    max-height: 460px;
+    background-color: #fff;
+    box-shadow: 0px 6px 25px rgba(11, 150, 66, 0.6);
+    border-radius: 20px;
+    padding: 10px;
+    z-index: 2;
+}
+.reviews-slider-slide-box-content {
+    position: relative;
+    border: 1px solid #F3F3F3;
+    box-sizing: border-box;
+    filter: drop-shadow(0px 6px 25px rgba(216, 216, 216, 0.3));
+    border-radius: 20px;
+    padding: 35px 13px 40px 20px;
+}
+.reviews-slider-slide-box-content-person {
+    display: flex;
+    flex-direction: row;
+}
+.reviews-slider-slide-box-content__img {
+    max-height: 70px;
+    margin-right: 20px;
+}
+.reviews-slider-slide-box-content-name__name {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 100%;
+    color: #333333;
+    margin-top: 10px;
+    margin-bottom: 11px;
+}
+.reviews-slider-slide-box-content-name-score__img {
+    max-height: 12px;
+}
+.reviews-slider-slide-box-content__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333333;
+    margin-bottom: 30px;
+    margin-top: 26px;
+}
+.reviews-slider-slide-box-content__more {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #BCBCBC;
+    cursor: pointer;
+}
+.reviews-slider-slide-box-content__more::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #C4C4C4;
+    height: 1px;
+    left: 0;
+    bottom: -2px;
 
+}
+.reviews-slider-arrowPrev, .reviews-slider-arrowNext {
+    cursor: pointer;
+}
+.slick-center {
+    transform: translateY(0px);
+}
+.reviews-slider-slide-shadow {
+    margin: 50px 0px 0px 80px;
+    display: flex;
+}
+.reviews-slider-slide-shadow__img {
+    max-width: 170px;
+}
 
 /* age */
 
+.age {
+    position: relative;
+    padding-bottom: 420px;
+}
+.age-box {
+    max-width: 1171px;
+    max-height: 454px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 25px rgba(206, 206, 206, 0.25);
+    border-radius: 15px;
+    padding: 8px 14px 7px 14px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.age-box-content {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #F0F0F0;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 40px 45px;
+}
+.age-box-content-texts {
+    position: relative;
+    margin-right: 20px;
+}
+.age-box-content-texts__title--upper {
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #333333;
+    max-width: 520px;
+}
+.age-box-content-texts__title--lower {
+    font-weight: 800;
+    font-size: 23px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #333333;
+}
+.age-box-content-texts__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 130%;
+    color: #333333;
+    max-width: 315px;
+}
+.age-box-content-texts__img {
+    position: absolute;
+    left: 220px;
+    bottom: -15px;
+}
+.age-box-content-video {
+    position: relative;
+    max-width: 458px;
+    max-height: 350px;
+}
+.age-box-content-video__video {
+    max-width: 458px;
+    max-height: 350px;
+    border-radius: 20px;
+    margin-bottom: 35px;
+}
+.age-box-content-video__video--none {
+    display: none;
+}
+.age-box-content-video__img {
+    max-width: 458px;
+    max-height: 350px;
+}
+.age-box-content-video-play {
+    position: absolute;
+    left: 160px;
+    top: 120px;
+    cursor: pointer;
+}
+.age-box-content-video-play__img {
+    max-width: 114px;
+}
+.age-discount {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 105px;
+}
+.age-discount__flex {
+    /* width: 20%; */
+}
+.age-discount-content__title {
+    max-width: 508px;
+    font-weight: 400;
+    font-size: 41px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #333333;
+}
+.age-discount-content__desc {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 130%;
+    color: #333333;
+}
+.age-discount-content-button {
+    position: relative;
+    background: linear-gradient(181.45deg, #18D262 9.41%, #109A47 99.02%);
+    box-shadow: inset 0px 2px 0px #0BC154, inset 0px -3px 0px #058F3D;
+    border-radius: 10px;
+    max-width: 350px;
+    padding: 26px 105px 32px 105px;
+    z-index: 2;
+}
+.age-discount-content-button::after {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 80%;
+    display: flex;
+    margin-left: -55px;
+    top: 20px;
+    background: linear-gradient(181.45deg, rgba(24, 210, 98, 0.5) 9.41%, rgba(16, 154, 71, 0.5) 99.02%);
+    filter: blur(30px);
+    border-radius: 10px;
+    transition: 0.6s all ease;
+}
+.age-discount-content-button:hover:after {
+    content: "";
+    transition: 0.6s all ease;
+    opacity: 0;
+}
+.age-discount-content-button__content {
+    position: relative;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 2;
+}
+.age-instagram__img {
+    position: absolute;
+    max-width: 373px;
+    right: 0;
+    top: 350px;
+}
+.age-bottom__img {
+    position: absolute;
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
 /* questions */
+
+
 
 /* footer */
 
