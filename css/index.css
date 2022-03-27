@@ -1798,15 +1798,17 @@ img {
     cursor: pointer;
     right: 60px;
     top: 60px;
-    width: 21px;
-    height: 21px;
+    width: 41px;
+    height: 41px;
     z-index: 10;
+    background-color: #FFFFFF;
 }
 .questions-list-item-marks__horisontal {
     width: 21px;
     height: 2px;
     background-color: #C4C4C4;
     transition: all ease 0.6s;
+    transform: translate(10px, 0px);
     border-radius: 2px;
 }
 .questions-list-item-marks__vertical {
@@ -1814,7 +1816,7 @@ img {
     height: 21px;
     background-color: #C4C4C4;
     transition: all ease 0.6s;
-    transform: translate(10px, 11px);
+    transform: translate(20px, 11px);
     border-radius: 2px;
 }
 .questions-list-item-marks__vertical--none {
