@@ -1524,6 +1524,7 @@ img {
     text-transform: uppercase;
     color: #BCBCBC;
     cursor: pointer;
+    max-width: 100px;
     transition: 0.6s all ease;
 }
 .reviews-slider-slide-box-content__more:hover {
