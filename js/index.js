@@ -144,6 +144,7 @@ $('.footer-nav__reviews').on('click', function() {
 
 let licenseIsFirst = true;
 let photosIsFirst = true;
+let lookIsFirst = true;
 
 $('.choose-puzzle-content-button').on('click', function() {
     $('.plug').removeClass("popups--none");
@@ -161,9 +162,45 @@ $('.choose-puzzle-content__more').on('click', function() {
     $('body').addClass("body--nonscroll");
 
     function showPop() {
-        $('.look').removeClass("popups--bright");
         $('.look-close').removeClass("popups--closed");
         $('.look-box').removeClass("popups--closed");
+
+        /*if(lookIsFirst) {
+            // $('.look-box-content-complect-slider-slide__img').slick({
+            //     slidesToShow: 1,
+            //     slidesToScroll: 1,
+            //     arrows: false,
+            //     fade: true,
+            //     asNavFor: '.look-box-content-complect-slider'
+            // });
+            $('.look-box-content-complect-slider').slick({
+                infinite: true,
+                centerMode: true,
+                centerPadding: '150px',
+                vertical: true,
+                // asNavFor: '.look-box-content-complect-slider-slide__img',
+                draggable: false,
+                prevArrow: '<div class="look-box-content-complect-slider-arrowPrev"><img src="img/license/arrowPrev.svg" alt="" class="look-box-content-complect-slider-arrowPrev__img"></div>',
+                nextArrow: '<div class="look-box-content-complect-slider-arrowNext"><img src="img/license/arrowNext.svg" alt="" class="look-box-content-complect-slider-arrowNext__img"></div>',
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: false,
+            
+                responsive: [{
+                    breakpoint: 1200,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        centerMode: false,
+                        draggable: true,
+                    }
+                    }
+                ]
+            });
+            lookIsFirst = false;
+        }*/
+        
+        $('.look').removeClass("popups--bright");
     }
     setTimeout(showPop, 10);
 });
@@ -390,8 +427,138 @@ $('.feedback-box-content-button').on('click', function() {
     setTimeout(hidePop, 1201);
 });
 
-//
+// look look-box-content-complect image-swap
 
+let currentImg = 1;
+
+$('#look-box-content-complect-prelook-unit--1').on('click', function() {
+    if(currentImg != 1) {
+        $('.look-box-content-complect-prelook-unit--active').removeClass('look-box-content-complect-prelook-unit--active');
+        $('#look-box-content-complect-prelook-unit--1').addClass('look-box-content-complect-prelook-unit--active');
+
+        $('#look-box-content-complect-focus-unit--' + currentImg).addClass('look-box-content-complect-focus-unit--closed');
+        $('#look-box-content-complect-focus-unit--1').removeClass('look-box-content-complect-focus-unit--closed');
+        currentImg = 1;
+    }
+});
+$('#look-box-content-complect-prelook-unit--2').on('click', function() {
+    if(currentImg != 2) {
+        $('.look-box-content-complect-prelook-unit--active').removeClass('look-box-content-complect-prelook-unit--active');
+        $('#look-box-content-complect-prelook-unit--2').addClass('look-box-content-complect-prelook-unit--active');
+
+        $('#look-box-content-complect-focus-unit--' + currentImg).addClass('look-box-content-complect-focus-unit--closed');
+        $('#look-box-content-complect-focus-unit--2').removeClass('look-box-content-complect-focus-unit--closed');
+        currentImg = 2;
+    }
+});
+$('#look-box-content-complect-prelook-unit--3').on('click', function() {
+    if(currentImg != 3) {
+        $('.look-box-content-complect-prelook-unit--active').removeClass('look-box-content-complect-prelook-unit--active');
+        $('#look-box-content-complect-prelook-unit--3').addClass('look-box-content-complect-prelook-unit--active');
+
+        $('#look-box-content-complect-focus-unit--' + currentImg).addClass('look-box-content-complect-focus-unit--closed');
+        $('#look-box-content-complect-focus-unit--3').removeClass('look-box-content-complect-focus-unit--closed');
+        currentImg = 3;
+    }
+});
+$('#look-box-content-complect-prelook-unit--4').on('click', function() {
+    if(currentImg != 4) {
+        $('.look-box-content-complect-prelook-unit--active').removeClass('look-box-content-complect-prelook-unit--active');
+        $('#look-box-content-complect-prelook-unit--4').addClass('look-box-content-complect-prelook-unit--active');
+
+        $('#look-box-content-complect-focus-unit--' + currentImg).addClass('look-box-content-complect-focus-unit--closed');
+        $('#look-box-content-complect-focus-unit--4').removeClass('look-box-content-complect-focus-unit--closed');
+        currentImg = 4;
+    }
+});
+$('.look-box-content-complect-prelook-arrowPrev').on('click', function() {
+    if(currentImg == 1) {
+        $('#look-box-content-complect-prelook-unit--1').removeClass('look-box-content-complect-prelook-unit--active');
+        $('#look-box-content-complect-prelook-unit--4').addClass('look-box-content-complect-prelook-unit--active');
+
+        $('#look-box-content-complect-focus-unit--4').removeClass('look-box-content-complect-focus-unit--closed');
+        $('#look-box-content-complect-focus-unit--1').addClass('look-box-content-complect-focus-unit--closed');
+        currentImg = 4;
+    }
+    else {
+        $('#look-box-content-complect-prelook-unit--' + currentImg).removeClass('look-box-content-complect-prelook-unit--active');
+        $('#look-box-content-complect-focus-unit--' + currentImg).addClass('look-box-content-complect-focus-unit--closed');
+        currentImg--;
+        $('#look-box-content-complect-prelook-unit--' + currentImg).addClass('look-box-content-complect-prelook-unit--active');
+        $('#look-box-content-complect-focus-unit--' + currentImg).removeClass('look-box-content-complect-focus-unit--closed');
+    }
+});
+$('.look-box-content-complect-prelook-arrowNext').on('click', function() {
+    if(currentImg == 4) {
+        $('#look-box-content-complect-prelook-unit--4').removeClass('look-box-content-complect-prelook-unit--active');
+        $('#look-box-content-complect-prelook-unit--1').addClass('look-box-content-complect-prelook-unit--active');
+
+        $('#look-box-content-complect-focus-unit--1').removeClass('look-box-content-complect-focus-unit--closed');
+        $('#look-box-content-complect-focus-unit--4').addClass('look-box-content-complect-focus-unit--closed');
+        currentImg = 1;
+    }
+    else {
+        $('#look-box-content-complect-prelook-unit--' + currentImg).removeClass('look-box-content-complect-prelook-unit--active');
+        $('#look-box-content-complect-focus-unit--' + currentImg).addClass('look-box-content-complect-focus-unit--closed');
+        currentImg++;
+        $('#look-box-content-complect-prelook-unit--' + currentImg).addClass('look-box-content-complect-prelook-unit--active');
+        $('#look-box-content-complect-focus-unit--' + currentImg).removeClass('look-box-content-complect-focus-unit--closed');
+    }
+});
+
+// look change look-box-content-complect-pay-sizes
+
+$('.look-box-content-complect-pay-sizes-small').on('click', function() {
+    if(!$('.look-box-content-complect-pay-sizes-small').hasClass('look-box-content-complect-pay-sizes--active')) {
+        $('.look-box-content-complect-pay-sizes--active').removeClass('look-box-content-complect-pay-sizes--active');
+        $('.look-box-content-complect-pay-sizes-small').addClass('look-box-content-complect-pay-sizes--active');
+    }
+});
+$('.look-box-content-complect-pay-sizes-middle').on('click', function() {
+    if(!$('.look-box-content-complect-pay-sizes-middle').hasClass('look-box-content-complect-pay-sizes--active')) {
+        $('.look-box-content-complect-pay-sizes--active').removeClass('look-box-content-complect-pay-sizes--active');
+        $('.look-box-content-complect-pay-sizes-middle').addClass('look-box-content-complect-pay-sizes--active');
+    }
+});
+$('.look-box-content-complect-pay-sizes-extralarge').on('click', function() {
+    if(!$('.look-box-content-complect-pay-sizes-extralarge').hasClass('look-box-content-complect-pay-sizes--active')) {
+        $('.look-box-content-complect-pay-sizes--active').removeClass('look-box-content-complect-pay-sizes--active');
+        $('.look-box-content-complect-pay-sizes-extralarge').addClass('look-box-content-complect-pay-sizes--active');
+    }
+});
+
+// look count of look-box-content-complect-pay-count
+
+let counter = 1;
+
+function changeCount(counter) {
+    counter = document.getElementsByClassName('look-box-content-complect-pay-count-counter-number')[0].value;
+
+    if(counter < 0)
+        counter *= -1;
+
+    return counter;
+}
+
+$('.look').on('click', function() {
+    counter = document.getElementsByClassName('look-box-content-complect-pay-count-counter-number')[0].value;
+
+    if(counter < 0)
+        counter *= -1;
+});
+$('.look-box-content-complect-pay-count-counter__less').on('click', function() {
+    counter = changeCount(counter);
+    if(counter > 1) {
+        counter--; 
+        $('.look-box-content-complect-pay-count-counter-number').val(counter);
+    }
+});
+$('.look-box-content-complect-pay-count-counter__more').on('click', function() {
+    counter = changeCount(counter);
+
+    counter++; 
+    $('.look-box-content-complect-pay-count-counter-number').val(counter);
+});
 
 
 //

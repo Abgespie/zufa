@@ -2448,7 +2448,7 @@ img {
     height: 90%;
     box-shadow: 0px 14px 40px rgba(163, 169, 183, 0.17);
     border-radius: 10px;
-    padding: 20px 70px;
+    padding: 40px 70px;
 }
 .look-close {
     position: absolute;
@@ -2489,7 +2489,314 @@ img {
 }
 .look-box-content {
     overflow-y: scroll;
+    overflow-x: hidden;
     max-height: 100%;
+}
+.look-box-content-complect {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.look-box-content-complect-prelook {
+    position: relative;
+    max-width: 82px;
+    padding-top: 25px;
+}
+.look-box-content-complect-prelook-unit {
+    cursor: pointer;
+    max-width: 82px;
+    margin-bottom: 10px;
+}
+.look-box-content-complect-prelook-unit__img {
+    max-width: 80px;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-prelook-unit--active {
+    border: 1px solid #EBEBEB;
+    border-radius: 5px;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-prelook-arrowPrev {
+    position: absolute;
+    transform: rotate(90deg);
+    top: -5px;
+    left: 25px;
+}
+.look-box-content-complect-prelook-arrowNext {
+    /* position: absolute; */
+    transform: rotate(90deg) translate(15px, 5px);
+}
+.look-box-content-complect-prelook-arrowPrev, .look-box-content-complect-prelook-arrowNext {
+    cursor: pointer;
+}
+.look-box-content-complect-focus {
+    position: relative;
+    max-width: 85%;
+    max-height: 500px;
+    width: 376px;
+    border: 1px solid #E1E1E1;
+    box-sizing: border-box;
+    border-radius: 15px;
+    padding: 36px 24px 25px 23px;
+    margin-left: 24px;
+    margin-right: 23px;
+}
+.look-box-content-complect-focus-unit {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: 100%;
+    transition: all ease 0.6s;
+    /* position: absolute; */
+}
+.look-box-content-complect-focus-unit--closed {
+    opacity: 0;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-focus-unit__img {
+    max-width: 329px;
+    height: 90%;
+}
+.look-box-content-complect-pay__title {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.look-box-content-complect-pay__price {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.look-box-content-complect-pay__price--higher {
+    text-decoration-line: line-through;
+    color: #C4C4C4;
+}
+.look-box-content-complect-pay__hr {
+    max-width: 70%;
+    height: 1px;
+    background-color: #EBEBEB;
+    margin-bottom: 30px;
+}
+.look-box-content-complect-pay-sizes {
+    display: flex;
+    flex-flow: row wrap;
+}
+.look-box-content-complect-pay-sizes-unit {
+    max-width: 159px;
+    max-height: 237px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 4px 25px rgba(206, 206, 206, 0.25);
+    border-radius: 15px;
+    transition: all ease 0.6s;
+    padding-bottom: 20px;
+    cursor: pointer;
+}
+.look-box-content-complect-pay-sizes-unit:not(:last-child) {
+    margin-right: 14px;
+}
+.look-box-content-complect-pay-sizes-unit-size {
+    background: #F4F4F4;
+    border-radius: 15px 15px 0px 0px;
+    padding: 25px 36px;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-sizes-unit-size__size {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin: 0;
+    color: #333;
+    opacity: 0.5;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-sizes-unit-size__desc {
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 20px;
+    margin: 0;
+    color: #9B9B9B;
+    opacity: 0.5;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-sizes-unit-info {
+    padding-left: 11px;
+    padding-right: 10px;
+}
+.look-box-content-complect-pay-sizes-unit-info__price {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #333333;
+}
+.look-box-content-complect-pay-sizes-unit-info__price--black {
+    text-decoration-line: line-through;
+    color: #C4C4C4;
+}
+.look-box-content-complect-pay-sizes-unit-info__details {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    color: #B7B7B7;
+}
+.look-box-content-complect-pay-sizes-unit-info__assembly {
+    max-width: 124px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 100%;
+    letter-spacing: 0.04em;
+    color: #B7B7B7;
+}
+.look-box-content-complect-pay-sizes-unit-info__details--black, .look-box-content-complect-pay-sizes-unit-info__assembly--black {
+    color: #333;
+}
+.look-box-content-complect-pay-sizes--active {
+    box-shadow: 0px 4px 25px rgba(16, 154, 71, 0.25);
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-sizes--active .look-box-content-complect-pay-sizes-unit-size {
+    background-color: #109A47;
+    color: #fff;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-sizes--active .look-box-content-complect-pay-sizes-unit-size__size {
+    color: #fff;
+    opacity: 1;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-sizes--active .look-box-content-complect-pay-sizes-unit-size__desc {
+    color: #fff;
+    opacity: 1;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-count {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #F9F9F9;
+    border-radius: 10px;
+    margin-top: 45px;
+    max-width: 85%;
+}
+.look-box-content-complect-pay-count-counter {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.look-box-content-complect-pay-count-counter__less, .look-box-content-complect-pay-count-counter__more {
+    position: relative;
+    height: 30px;
+    width: 30px;
+    background: #EAEAEA;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-count-counter__less::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 2px;
+    top: 14px;
+    left: 8px;
+    background-color: #767676;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-count-counter__more::after {
+    content: "+";
+    position: absolute;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    top: 2px;
+    left: 9.5px;
+    color: #767676;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-count-counter__less:hover::after {
+    background-color: #fff;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-count-counter__more:hover::after {
+    color: #fff;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-count-counter__less:hover, .look-box-content-complect-pay-count-counter__more:hover {
+    background: #18D262;
+    transition: all ease 0.6s;
+}
+.look-box-content-complect-pay-count-counter-number {
+    width: 50px;
+    height: 30px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    text-align: center;
+    -moz-appearance: textfield;
+}
+.look-box-content-complect-pay-count-counter-number::-webkit-inner-spin-button { 
+    display: none;
+}
+.look-box-content-complect-pay-count-button {
+    position: relative;
+    background: linear-gradient(181.45deg, #18D262 9.41%, #109A47 99.02%);
+    box-shadow: inset 0px 2px 0px #0BC154, inset 0px -3px 0px #058F3D;
+    border-radius: 10px;
+    height: 100%;
+    max-width: 248px;
+    padding: 19px 45px 25px 45px;
+    z-index: 2;
+}
+.look-box-content-complect-pay-count-button::after {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 50%;
+    display: flex;
+    margin-left: -30px;
+    top: 20px;
+    background: linear-gradient(181.45deg, rgba(24, 210, 98, 0.5) 9.41%, rgba(16, 154, 71, 0.5) 99.02%);
+    filter: blur(30px);
+    border-radius: 10px;
+    transition: 0.6s all ease;
+}
+.look-box-content-complect-pay-count-button:hover:after {
+    content: "";
+    transition: 0.6s all ease;
+    opacity: 0;
+}
+.look-box-content-complect-pay-count-button__content {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 2;
 }
 
 /* pay */
