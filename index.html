@@ -398,7 +398,7 @@
                     <div class="pay-box-content-order">
                         <div class="pay-box-content-order-promocode">
                             <h2 class="pay-box-content-order-promocode__title">
-                                Промокод <span class="pay-box-content-order-promocode__title--lower">(Введите при наличии)</span>
+                                Промокод <span class="pay-box-content-order-promocode__title--lower"> (Введите при наличии)</span>
                             </h2>
                             <div class="pay-box-content-order-promocode-enter">
                                 <input type="text" placeholder="Промокод" class="pay-box-content-order-promocode-enter__input">
@@ -415,7 +415,7 @@
                             </h2>
                             <input type="text" placeholder="Ваш город" class="pay-box-content-order-delivery__input pay-box-content-order-delivery__input--city">
                             <div class="pay-box-content-order-delivery-ways">
-                                <div class="pay-box-content-order-delivery-ways-way">
+                                <div class="pay-box-content-order-delivery-ways-way pay-box-content-order-delivery-ways-way--1">
                                     <p class="pay-box-content-order-delivery-ways-way__title">
                                         СДЭК до пункта 
                                         выдачи 
@@ -424,7 +424,7 @@
                                         от 2 дней, от 210 ₽
                                     </p>
                                 </div>
-                                <div class="pay-box-content-order-delivery-ways-way">
+                                <div class="pay-box-content-order-delivery-ways-way pay-box-content-order-delivery-ways-way--2">
                                     <p class="pay-box-content-order-delivery-ways-way__title">
                                         Boxberry до пункта 
                                         выдачи
@@ -433,7 +433,7 @@
                                         от 4 дней, от 222,5 ₽
                                     </p>
                                 </div>
-                                <div class="pay-box-content-order-delivery-ways-way">
+                                <div class="pay-box-content-order-delivery-ways-way pay-box-content-order-delivery-ways-way--3">
                                     <p class="pay-box-content-order-delivery-ways-way__title">
                                         Boxberry курьер д
                                         о двери
@@ -444,12 +444,52 @@
                                 </div>
                             </div>
                             <input type="text" placeholder="Выберите пункт выдачи" class="pay-box-content-order-delivery__input pay-box-content-order-delivery__input--pointofissue">
+                            <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5591cc60b05807e5b84c2f8d67033b33c01ca39d5e43e4921dbd4e087bc8f8cd&amp;source=constructor" 
+                            width="680" height="240" frameborder="0"  class="pay-box-content-order-delivery__map"></iframe>
                         </div>
                         <div class="pay-box-content-order-receiver">
-
+                            <h2 class="pay-box-content-order-receiver__title">
+                                Получатель
+                            </h2>
+                            <input type="text" placeholder="Ваше имя" class="pay-box-content-order-receiver__input pay-box-content-order-receiver__input--name">
+                            <input type="tel" placeholder="Ваш телефон" class="pay-box-content-order-receiver__input pay-box-content-order-receiver__input--telephone">
+                            <input type="email" placeholder="Ваша почта" class="pay-box-content-order-receiver__input pay-box-content-order-receiver__input--email">
                         </div>
                         <div class="pay-box-content-order-payway">
-
+                            <h2 class="pay-box-content-order-payway__title">
+                                Способ оплаты
+                            </h2>
+                            <div class="pay-box-content-order-payway-box">
+                                <div class="pay-box-content-order-payway-box-ways">
+                                    <div class="pay-box-content-order-payway-box-ways-way pay-box-content-order-payway-box-ways-way--1">
+                                        <p class="pay-box-content-order-payway-box-ways-way__desc">
+                                            Банковской картой, ЮMoney 
+                                            или телефоном через ЮKassa
+                                        </p>
+                                        <p class="pay-box-content-order-payway-box-ways-way__discount">
+                                            5% скидка при такой оплате 
+                                        </p>
+                                    </div>
+                                    <div class="pay-box-content-order-payway-box-ways-way pay-box-content-order-payway-box-ways-way--2">
+                                        <p class="pay-box-content-order-payway-box-ways-way__desc">
+                                            Оплата при получении
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="pay-box-content-order-payway-box-amount">
+                                    <p class="pay-box-content-order-payway-box-amount__title--lower">
+                                        Сумма: 1 798 ₽
+                                    </p>
+                                    <h2 class="pay-box-content-order-payway-box-amount__title--higher">
+                                        Итоговая сумма: 1 798 ₽
+                                    </h2>
+                                    <button class="pay-box-content-order-payway-box-amount-button">
+                                        <span class="pay-box-content-order-payway-box-amount-button__content">
+                                            Подтвердить заказ
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

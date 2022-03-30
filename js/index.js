@@ -395,6 +395,46 @@ $('.pay-close').on('click', function() {
     }
     setTimeout(hidePop, 601);
 });
+$('.pay-box-content-draw-content-payment__clear').on('click', function() {
+    $('.pay').addClass("popups--bright");
+    $('.pay-close').addClass("popups--closed");
+    $('.pay-box').addClass("popups--closed");
+    $('body').removeClass("body--nonscroll");
+
+    function hidePop() {
+        $('.pay').addClass("popups--none");
+    }
+    setTimeout(hidePop, 601);
+});
+$('.pay-box-draw-content-ware__close').on('click', function() {
+    $('.pay').addClass("popups--bright");
+    $('.pay-close').addClass("popups--closed");
+    $('.pay-box').addClass("popups--closed");
+    $('body').removeClass("body--nonscroll");
+
+    function hidePop() {
+        $('.pay').addClass("popups--none");
+    }
+    setTimeout(hidePop, 601);
+});
+$('.pay-box-content-draw-content-payment-button').on('click', function() {
+    $('.pay').addClass("popups--bright");
+    $('.pay-close').addClass("popups--closed");
+    $('.pay-box').addClass("popups--closed");
+    $('body').removeClass("body--nonscroll");
+
+    function hidePop() {
+        $('.pay').addClass("popups--none");
+    }
+    setTimeout(hidePop, 601);
+
+    function scrollPop() {
+        $('html, body').animate({
+            scrollTop: $('.choose').offset().top
+        });
+    }
+    setTimeout(scrollPop, 201);
+});
 $('.look-close').on('click', function() {
     $('.look').addClass("popups--bright");
     $('.look-close').addClass("popups--closed");
@@ -622,6 +662,32 @@ $('.pay-box-content-draw-content-ware-parameter-counter__more').on('click', func
 
     counterPay++; 
     $('.pay-box-content-draw-content-ware-parameter-counter-number').val(counterPay);
+});
+
+// pay-box-content-order-delivery-ways activate
+
+$('.pay-box-content-order-delivery-ways-way--1').on('click', function() {
+    $('.pay-box-content-order-delivery-ways-way--active').removeClass('pay-box-content-order-delivery-ways-way--active');
+    $('.pay-box-content-order-delivery-ways-way--1').addClass('pay-box-content-order-delivery-ways-way--active');
+});
+$('.pay-box-content-order-delivery-ways-way--2').on('click', function() {
+    $('.pay-box-content-order-delivery-ways-way--active').removeClass('pay-box-content-order-delivery-ways-way--active');
+    $('.pay-box-content-order-delivery-ways-way--2').addClass('pay-box-content-order-delivery-ways-way--active');
+});
+$('.pay-box-content-order-delivery-ways-way--3').on('click', function() {
+    $('.pay-box-content-order-delivery-ways-way--active').removeClass('pay-box-content-order-delivery-ways-way--active');
+    $('.pay-box-content-order-delivery-ways-way--3').addClass('pay-box-content-order-delivery-ways-way--active');
+});
+
+// pay-box-content-order-payway-box-ways activate
+
+$('.pay-box-content-order-payway-box-ways-way--1').on('click', function() {
+    $('.pay-box-content-order-payway-box-ways-way--active').removeClass('pay-box-content-order-payway-box-ways-way--active');
+    $('.pay-box-content-order-payway-box-ways-way--1').addClass('pay-box-content-order-payway-box-ways-way--active');
+});
+$('.pay-box-content-order-payway-box-ways-way--2').on('click', function() {
+    $('.pay-box-content-order-payway-box-ways-way--active').removeClass('pay-box-content-order-payway-box-ways-way--active');
+    $('.pay-box-content-order-payway-box-ways-way--2').addClass('pay-box-content-order-payway-box-ways-way--active');
 });
 
 //

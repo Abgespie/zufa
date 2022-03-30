@@ -3269,6 +3269,7 @@ img {
     font-size: 18px;
     line-height: 22px;
     color: #20232F;
+    margin: 0;
 }
 .pay-box-content-draw-content-payment__price--higher {
     font-weight: 400;
@@ -3354,13 +3355,333 @@ img {
 }
 
 
+.pay-box-content-order {
+    background-color: #FBFBFB;
+    border-radius: 10px;
+    margin-top: 40px;
+    padding: 40px 50px 50px 40px;
+    margin-bottom: 20px;
+    max-width: 875px;
+}
+.pay-box-content-order-promocode__title {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    display: flex;
+    align-items: center;
+    color: #353030;
+}
+.pay-box-content-order-promocode__title--lower {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #A8A8A8;
+    margin-bottom: -5px;
+    margin-left: 5px;
+}
+.pay-box-content-order-promocode-enter {
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 40px;
+}
+.pay-box-content-order-promocode-enter__input {
+    background-color: #FFFFFF;
+    border: 1px solid #F2F2FA;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 20px 22px;
+    max-width: 100%;
+    width: 324px;
+    margin-right: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #333333;
+}
+.pay-box-content-order-promocode-enter-button {
+    width: 324px;
+    background: #E2E2E2;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #333333;
+    max-height: 60px;
+    padding: 20px 40px 21px 40px;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-promocode-enter-button__content {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+}
+.pay-box-content-order-promocode-enter-button:hover {
+    background-color: #2BB063;
+    color: #fff;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-delivery__title {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    color: #353030;
+}
+.pay-box-content-order-delivery__input {
+    background-color: #FFFFFF;
+    border: 1px solid #F2F2FA;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 20px 22px;
+    max-width: 100%;
+    width: 678px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.pay-box-content-order-delivery {
+    margin-bottom: 40px;
+}
+.pay-box-content-order-delivery-ways {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.pay-box-content-order-delivery-ways-way {
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid #F2F2FA;
+    max-width: 240px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 20px 80px 20px 20px;
+    cursor: pointer;
+    transition: 0.6s all ease;
+    margin-bottom: 20px;
+}
+.pay-box-content-order-delivery-ways-way::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 40px;
+    width: 22px;
+    height: 22px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-delivery-ways-way::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 46px;
+    width: 10px;
+    height: 10px;
+    background-color: #E1E1E1;
+    border-radius: 50%;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-delivery-ways-way--active::before {
+    background-color: #18D262;
+    box-shadow: 0px 0px 11px 3px rgba(16, 154, 71, 0.3);
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-delivery-ways-way--active::after {
+    background-color: #fff;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-delivery-ways-way--active {
+    box-shadow: 0px 4px 25px rgba(16, 154, 71, 0.25);
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-delivery-ways-way__title {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #333333;
+    margin: 0;
+    margin-bottom: 8px;
+}
+.pay-box-content-order-delivery-ways-way__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: rgba(36, 36, 46, 0.7);
+    margin: 0;
+}
+.pay-box-content-order-delivery__map {
+    border-radius: 10px;
+    height: 240px;
+    max-width: 687px;
+
+}
 
 
+.pay-box-content-order-receiver__title {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    color: #353030;
+    margin-bottom: 20px;
+}
+.pay-box-content-order-receiver__input {
+    background-color: #FFFFFF;
+    border: 1px solid #F2F2FA;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 20px 22px;
+    max-width: 100%;
+    width: 324px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    color: #333333;
+    margin-bottom: 20px;
+}
+.pay-box-content-order-receiver__input--name {
+    margin-right: 34px;
+}
 
 
-
-
-
+.pay-box-content-order-payway__title {
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 28px;
+    color: #353030;
+}
+.pay-box-content-order-payway-box {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.pay-box-content-order-payway-box-ways:first-child {
+    margin-bottom: 20px;
+}
+.pay-box-content-order-payway-box-ways-way {
+    position: relative;
+    background-color: #FFFFFF;
+    border: 1px solid #F2F2FA;
+    max-width: 320px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    padding: 20px 80px 20px 20px;
+    cursor: pointer;
+    transition: 0.6s all ease;
+    margin-bottom: 20px;
+}
+.pay-box-content-order-payway-box-ways-way::before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 55px;
+    width: 22px;
+    height: 22px;
+    background-color: #F5F5F5;
+    border-radius: 50%;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-payway-box-ways-way::after {
+    content: "";
+    position: absolute;
+    right: 16px;
+    top: 61px;
+    width: 10px;
+    height: 10px;
+    background-color: #E1E1E1;
+    border-radius: 50%;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-payway-box-ways-way--2::before {
+    right: 10px;
+    top: 20px;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-payway-box-ways-way--2::after {
+    right: 16px;
+    top: 26px;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-payway-box-ways-way--active::before {
+    background-color: #18D262;
+    box-shadow: 0px 0px 11px 3px rgba(16, 154, 71, 0.3);
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-payway-box-ways-way--active::after {
+    background-color: #fff;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-payway-box-ways-way--active {
+    box-shadow: 0px 4px 25px rgba(16, 154, 71, 0.25);
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-payway-box-ways-way__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    margin: 0;
+    color: #333333;
+}
+.pay-box-content-order-payway-box-ways-way__discount {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #109A47;
+}
+.pay-box-content-order-payway-box-amount__title--lower {
+    text-align: right;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #000000;
+}
+.pay-box-content-order-payway-box-amount__title--higher {
+    text-align: right;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 140%;
+    color: #000000;
+}
+.pay-box-content-order-payway-box-amount-button {
+    position: relative;
+    background: linear-gradient(181.45deg, #18D262 9.41%, #109A47 99.02%);
+    box-shadow: inset 0px 2px 0px #0BC154, inset 0px -3px 0px #058F3D;
+    border-radius: 10px;
+    max-height: 53px;
+    max-width: 100%;
+    width: 329px;
+    padding: 17px 45px 17px 45px;
+    z-index: 2;
+    margin-top: 40px;
+}
+.pay-box-content-order-payway-box-amount-button::after {
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 60%;
+    display: flex;
+    margin-left: -10px;
+    top: 20px;
+    background: linear-gradient(181.45deg, rgba(24, 210, 98, 0.5) 9.41%, rgba(16, 154, 71, 0.5) 99.02%);
+    filter: blur(30px);
+    border-radius: 10px;
+    transition: 0.6s all ease;
+}
+.pay-box-content-order-payway-box-amount-button:hover:after {
+    content: "";
+    transition: 0.6s all ease;
+    opacity: 0;
+}
+.pay-box-content-order-payway-box-amount-button__content {
+    position: relative;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    z-index: 2;
+}
 
 /* plug */
 
