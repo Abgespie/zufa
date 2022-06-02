@@ -149,6 +149,8 @@ img {
     flex-direction: row;
     justify-content: space-between;
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .header-bottom-social-vk {
     width: 30px;
@@ -274,6 +276,9 @@ img {
     top: 250px;
     left: 10px;
 }
+.puzzle-bg--mobile {
+    display: none;
+}
 
 /* bullets */
 
@@ -375,11 +380,14 @@ img {
 .seldin-photo {
     position: relative;
 }
+.seldin-card__img {
+    display: none;
+}
 .seldin-photo__img {
     position: absolute;
     max-width: 1015px;
     bottom: -200px;
-    right: -200px;
+    right: -250px;
 }
 .seldin-air {
     position: relative;
@@ -511,18 +519,6 @@ img {
     margin-top: 250px;
     z-index: 2;
 }
-/* .perfect-box::after {
-    content: "";
-    position: absolute;
-    width: 713px;
-    z-index: 1;
-    height: 363px;
-    background: #FFFFFF;
-    box-shadow: 0px 10px 20px rgba(223, 223, 223, 0.25);
-    border-radius: 15px;
-    bottom: -20px;
-    left: 120px;
-} */
 .perfect-box-act {
     position: relative;
     z-index: 2;
@@ -3767,4 +3763,310 @@ img {
 
 
 /* header */
+
+@media(max-width: 1440px) {
+    .header {
+        width: 100%;
+        float: left;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+@media(max-width: 1199px) {
+    .header {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .header-bottom-nav__desc:not(:last-child) {
+        margin-right: 30px;
+    }
+}
+@media(max-width: 991px) {
+    .header-bottom {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 0;
+        transition: all ease 0.6s;
+    }
+    .header-bottom-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    .header-bottom-basket {
+        max-height: 50px;
+        max-width: 190px;
+    }
+    .header-bottom-social {
+        max-width: 90px;
+        margin-bottom: 30px;
+    }
+    .header-top {
+        flex-direction: column;
+    }
+    .header-top-connect {
+        flex-direction: column;
+        align-items: center;
+        transition: all ease 0.6s;
+    }
+    .header-top-connect-email {
+        margin-bottom: 30px;
+        max-width: 203px;
+        margin-top: 30px;
+    }
+    .header-top{
+        border-bottom: none;
+    }
+    .header-top-logo--hr {
+        border-bottom: 1px solid #F2F2F2;
+    }
+    .header-top-mobile--close {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 10%;
+        top: 22px;
+        cursor: pointer;
+    }
+    .header-top-mobile--close-button--1, .header-top-mobile--close-button--2, .header-top-mobile--close-button--3 {
+        position: relative;
+        width: 24px;
+        height: 2px;
+        background-color: #000000;
+        transition: all ease 0.6s;
+        border-radius: 2px;
+    }
+    .header-top-connect--closed {
+        transition: all ease 0.0s;
+        height: 0;
+        opacity: 0;
+    }
+    .header-bottom--closed {
+        transition: all ease 0.0s; 
+        height: 0;
+        opacity: 0;
+    }
+    .header-top-mobile--close-button--1 {
+        margin-bottom: 6px;
+    }
+    .header-top-mobile--close-button--2 {
+        margin-bottom: 6px;
+    }
+    .header-top-mobile--close-button--1--opened {
+        transform: rotate(45deg);
+        bottom: -7px
+    }
+    .header-top-mobile--close-button--2--opened {
+        opacity: 0;
+    }
+    .header-top-mobile--close-button--3--opened {
+        transform: rotate(135deg);
+        top: -8px;
+    }
+}
+
+
+/* puzzle */
+
+@media(max-width: 1440px) {
+    .puzzle {
+        padding-left: 600px;
+        margin-left: -400px;
+    }
+    .puzzle__title {
+        font-size: 60px;
+    }
+}
+@media(max-width: 1199px) {
+    .puzzle {
+        padding-left: 500px;
+    }
+}
+@media(max-width: 991px) {
+    .puzzle-bubble {
+        display: none;
+    }
+    .puzzle {
+        background: none;
+        margin-left: 0;
+        padding-left: 0;
+        text-align: center;
+        padding-bottom: 0;
+    }
+    .puzzle-bg--mobile {
+        display: block;
+        width: 100%;
+        
+    }
+    .puzzle__title {
+        padding-top: 50px;
+        font-size: 50px;
+    }
+}
+@media(max-width: 499px) {
+    .puzzle__title {
+        font-size: 35px;
+    }
+    .puzzle__desc {
+        font-size: 16px;
+    }
+    .puzzle-button {
+        padding: 25px 80px;
+    }
+    .puzzle-button__desc {
+        font-size: 16px;
+    }
+}
+
+
+/* bullets */
+
+@media(max-width: 991px) {
+    .bullets-bullet__img--plant {
+        /* margin-left: 0; */
+        margin-top: -20px;
+    }
+    .bullets-bullet__img--shuttle {
+        margin-top: 50px;
+        margin-left: 90px;
+    }
+    .bullets-bullet__img--calipers {
+        margin-top: 0;
+        margin-left: 70px;
+    }
+    .bullets-bullet__img--elephant {
+        margin-left: 70px;
+    }
+}
+@media(max-width: 767px) {
+    .bullets-bullet {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .bullets-bullet__img--plant {
+        margin-left: 0;
+    }
+    .bullets-bullet__img--shuttle {
+        margin-left: 0;
+    }
+    .bullets-bullet__img--calipers {
+        margin-left: 0;
+    }
+    .bullets-bullet__img--elephant {
+        margin-left: 0;
+    }
+}
+@media(max-width: 499px) {
+    .bullets-bullet__title {
+        font-size: 18px;
+    }
+    .bullets-bullet__desc {
+        font-size: 16px;
+    }
+    .bullets-bullet__img--plant {
+        max-width: 159px;
+    }
+    .bullets-bullet__img--calipers {
+        max-width: 144px;
+    }
+
+}
+
+
+/* seldin */
+
+@media(max-width: 1399px) {
+    .seldin-photo__img {
+        right: -450px;
+    }
+}
+@media(max-width: 1199px) {
+    .seldin-photo__img {
+        max-width: 917px;
+    }
+}
+@media(max-width: 991px)  {
+    .seldin {
+        padding-top: 200px;
+        padding-bottom: 79px;
+        margin-bottom: 20px;
+        z-index: 1;
+    }
+    .seldin-losings-box {
+        max-width: 656px;
+        margin-bottom: 200px;
+    }
+    .seldin-losungs-box-statement__quote--bot {
+        margin-left: 92%;
+    }
+    .seldin-photo__img {
+        display: none;
+    }
+    .seldin-card__img {
+        display: block;
+        position: absolute;
+        max-height: 456px;
+        bottom: -80px;
+        z-index: 1;
+        left: 100px;
+    }
+    .seldin-losungs-box-card {
+        position: relative;
+        
+    }
+    .seldin-losungs-card {
+        z-index: 5;
+        background: linear-gradient(130.21deg, #FFFFFF -1.26%, rgba(255, 255, 255, 0.9) 142.69%);
+        max-width: 404px;
+    }
+    .seldin-losungs-card__title {
+        margin-top: 0;
+    }
+    .seldin-losungs-card__title, .seldin-losungs-card__desc {
+        position: relative;
+    }
+    .seldin-losungs-card-cap__img {
+        max-width: 240px;
+    }
+}
+@media(max-width: 767px) {
+    .seldin-losungs-box-statement__desc {
+        font-size: 22px;
+    }
+}
+@media(max-width: 499px) {
+    .seldin-losungs-box-statement__desc {
+        font-size: 18px;
+    }
+    .seldin-losungs-card__title {
+        font-size: 18px;
+    }
+    .seldin-losungs-card__desc {
+        font-size: 16px;
+    }
+    .seldin-losungs-card {
+        max-width: 300px;
+    }
+    .seldin-losungs-card-cap__img {
+        max-width: 200px;
+        right: -50px;
+    }
+    .seldin-card__img  {
+        left: 20px;
+    }
+    .seldin-losungs-box-statement__desc {
+        margin-left: 10px;
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+    .seldin-losungs-box-statement__quote--bot {
+        margin-left: 85%;
+    }
+    .seldin-losungs-box-statement {
+        padding-bottom: 10px;
+    }
+}
+
+
+/* perfect */
 

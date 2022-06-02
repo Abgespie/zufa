@@ -1,3 +1,8 @@
+if($(document).width() < 992) {
+    $('.header-top-connect').addClass('header-top-connect--closed');
+    $('.header-bottom').addClass('header-bottom--closed');
+}
+
 // reviews slick-slider 
 
 $('.reviews-slider').slick({
@@ -688,6 +693,20 @@ $('.pay-box-content-order-payway-box-ways-way--1').on('click', function() {
 $('.pay-box-content-order-payway-box-ways-way--2').on('click', function() {
     $('.pay-box-content-order-payway-box-ways-way--active').removeClass('pay-box-content-order-payway-box-ways-way--active');
     $('.pay-box-content-order-payway-box-ways-way--2').addClass('pay-box-content-order-payway-box-ways-way--active');
+});
+
+// header-mobile-close
+
+
+
+$('.header-top-mobile--close').on('click', function() {
+    if($(document).width() < 992) {
+        $('.header-top-mobile--close-button--1').toggleClass('header-top-mobile--close-button--1--opened');
+        $('.header-top-mobile--close-button--2').toggleClass('header-top-mobile--close-button--2--opened');
+        $('.header-top-mobile--close-button--3').toggleClass('header-top-mobile--close-button--3--opened');
+        $('.header-top-connect').toggleClass('header-top-connect--closed');
+        $('.header-bottom').toggleClass('header-bottom--closed');
+    }
 });
 
 //
